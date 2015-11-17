@@ -1,0 +1,384 @@
+---
+---
+
+// ==================== solarized colorscheme ====================
+
+$base03:    #002b36;
+$base02:    #073642;
+$base01:    #586e75;
+$base00:    #657b83;
+$base0:     #839496;
+$base1:     #93a1a1;
+$base2:     #eee8d5;
+$base3:     #fdf6e3;
+$yellow:    #b58900;
+$orange:    #cb4b16;
+$red:       #dc322f;
+$magenta:   #d33682;
+$violet:    #6c71c4;
+$blue:      #268bd2;
+$cyan:      #2aa198;
+$green:     #859900;
+
+// ==================== font installation ====================
+@font-face {
+  font-family: 'menlo';
+  src: url('/fonts/menlo-regular.ttf');
+}
+
+@font-face {
+    font-family: 'anonymous-pro';
+    src: url('/fonts/anonymouspro-regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'anonymous-pro';
+    src: url('/fonts/anonymouspro-bold.ttf');
+    font-weight: 700;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'anonymous-pro';
+    src: url('/fonts/anonymouspro-italic.ttf');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'anonymous-pro';
+    src: url('/fonts/anonymouspro-bolditalic.ttf');
+    font-weight: 400;
+    font-style: italic;
+}
+
+// ==================== tearaway footer rules ====================
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+#body-contents {
+    min-height: 100%;
+    position: relative;
+}
+#content {
+    padding-bottom: 100px; /* Height of the footer */
+}
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;   /* Height of the footer */
+    line-height: 50px;
+    text-align: center;
+}
+
+// ==================== solarized light/dark switch ====================
+@mixin rebase($rebase03,
+              $rebase02,
+              $rebase01,
+              $rebase00,
+              $rebase0,
+              $rebase1,
+              $rebase2,
+              $rebase3) {
+    background-color:$rebase03;
+    color:$rebase0;
+    body {
+        font-family: menlo, monospace;
+        color:$rebase0;
+        p {
+            margin-top: 0;
+            margin-bottom: 1em;
+        }
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+        color:$rebase1;
+        border-color: $rebase0;
+    }
+    a, a:active, a:visited {
+        color: $rebase1;
+    }
+    .navbar {
+        background-color: $rebase02;
+        border: none;
+    }
+    .btn-default {
+        color:$rebase0;
+        background-color: $rebase03;
+        border: none;
+        &:focus {
+            outline: none;
+        }
+        &:active {
+            background-color: $rebase03;
+        }
+    }
+    figure, figcaption, #footer {
+        background-color: $rebase02;
+    }
+    figure:hover>figcaption {
+        color: $rebase02;
+    }
+    figcaption p {
+        margin: 5px;
+        margin-top: 0px;
+    }
+
+    code, pre {
+        border: none;
+        font-family: anonymous-pro;
+        font-size: 115%;
+        border-radius: 0px;
+        color:$rebase0;
+    }
+    code, .linenos pre {
+        background-color: $rebase02;
+    }
+    .codehilite pre {
+        background-color: $rebase02;
+    }
+    .codehilite {
+        background-color: $rebase03; color: $rebase0;
+
+        .c { color: $rebase01; } /* Comment */
+        .err { color: $rebase0; } /* Error */
+        .g { color: $rebase0; } /* Generic */
+        .k { color: $green; } /* Keyword */
+        .l { color: $rebase0; } /* Literal */
+        .n { color: $rebase0; } /* Name */
+        .o { color: $green; } /* Operator */
+        .x { color: $orange; } /* Other */
+        .p { color: $rebase0; } /* Punctuation */
+        .cm { color: $rebase01; } /* Comment.Multiline */
+        .cp { color: $green; } /* Comment.Preproc */
+        .c1 { color: $rebase01; } /* Comment.Single */
+        .cs { color: $green; } /* Comment.Special */
+        .gd { color: $cyan; } /* Generic.Deleted */
+        .ge { color: $rebase0;; font-style: italic } /* Generic.Emph */
+        .gr { color: $red; } /* Generic.Error */
+        .gh { color: $orange; } /* Generic.Heading */
+        .gi { color: $green; } /* Generic.Inserted */
+        .go { color: $rebase0; } /* Generic.Output */
+        .gp { color: $rebase0; } /* Generic.Prompt */
+        .gs { color: $rebase0;; font-weight: bold } /* Generic.Strong */
+        .gu { color: $orange; } /* Generic.Subheading */
+        .gt { color: $rebase0; } /* Generic.Traceback */
+        .kc { color: $orange; } /* Keyword.Constant */
+        .kd { color: $blue; } /* Keyword.Declaration */
+        .kn { color: $green; } /* Keyword.Namespace */
+        .kp { color: $green; } /* Keyword.Pseudo */
+        .kr { color: $blue; } /* Keyword.Reserved */
+        .kt { color: $red; } /* Keyword.Type */
+        .ld { color: $rebase0; } /* Literal.Date */
+        .m { color: $cyan; } /* Literal.Number */
+        .s { color: $cyan; } /* Literal.String */
+        .na { color: $rebase0; } /* Name.Attribute */
+        .nb { color: $orange } /* Name.Builtin */
+        .nc { color: $blue; } /* Name.Class */
+        .no { color: $orange; } /* Name.Constant */
+        .nd { color: $blue; } /* Name.Decorator */
+        .ni { color: $orange; } /* Name.Entity */
+        .ne { color: $orange; } /* Name.Exception */
+        .nf { color: $blue; } /* Name.Function */
+        .nl { color: $rebase0; } /* Name.Label */
+        .nn { color: $rebase0; } /* Name.Namespace */
+        .nx { color: $rebase0; } /* Name.Other */
+        .py { color: $rebase0; } /* Name.Property */
+        .nt { color: $blue; } /* Name.Tag */
+        .nv { color: $blue; } /* Name.Variable */
+        .ow { color: $green; } /* Operator.Word */
+        .w  { color: $rebase0; } /* Text.Whitespace */
+        .mf { color: $cyan; } /* Literal.Number.Float */
+        .mh { color: $cyan; } /* Literal.Number.Hex */
+        .mi { color: $cyan; } /* Literal.Number.Integer */
+        .mo { color: $cyan; } /* Literal.Number.Oct */
+        .sb { color: $rebase01 } /* Literal.String.Backtick */
+        .sc { color: $cyan; } /* Literal.String.Char */
+        .sd { color: $rebase0; } /* Literal.String.Doc */
+        .s2 { color: $cyan; } /* Literal.String.Double */
+        .se { color: $orange; } /* Literal.String.Escape */
+        .sh { color: $rebase0; } /* Literal.String.Heredoc */
+        .si { color: $cyan; } /* Literal.String.Interpol */
+        .sx { color: $cyan; } /* Literal.String.Other */
+        .sr { color: $red; } /* Literal.String.Regex */
+        .s1 { color: $cyan; } /* Literal.String.Single */
+        .ss { color: $cyan; } /* Literal.String.Symbol */
+        .bp { color: $blue; } /* Name.Builtin.Pseudo */
+        .vc { color: $blue; } /* Name.Variable.Class */
+        .vg { color: $blue; } /* Name.Variable.Global */
+        .vi { color: $blue; } /* Name.Variable.Instance */
+        .il { color: $cyan; } /* Literal.Number.Integer.Long */
+    }
+}
+
+
+// ==================== solarized accent colors ====================
+@mixin accentize($accent1, $accent2, $accent3) {
+    a {
+        text-decoration: none;
+        &, &:active, &:visited, code.url {
+            color: $accent3;
+        }
+        &:hover {
+            color: $accent2;
+        }
+        h1,h2,h3,h4,h5,h6 {
+            color:$accent3;
+        }
+    }
+    h1,h2,h3,h4,h5,h6 {
+        color:$accent1;
+    }
+    .clickable-entry {
+        h1,h2,h3,h4,h5,h6 {
+            color: $accent3;
+        }
+        &:hover {
+            h1,h2,h3,h4,h5,h6 {
+                color: $accent2;
+            }
+        }
+    }
+    .navbar {
+        color: $accent1;
+        border-radius: 0;
+        a:hover, a:focus {
+            background: none;
+            color: $accent2;
+        }
+    }
+    body {
+        background: none;
+    }
+    hr {
+        border-color: $accent1;
+    }
+    .btn-default:active {
+        color: $accent2;
+    }
+    figure:hover {
+        &, &>figcaption {
+            background-color: $accent2;
+        }
+    }
+    .icon-bar {
+        background-color: $accent1;
+    }
+}
+
+// ==================== applying the themes ====================
+.light {
+    @include rebase($base3,$base2,$base1,$base0,$base00,$base01,$base02,$base03);
+    @include accentize($blue, $yellow, $cyan);
+}
+
+
+.dark {
+    @include rebase($base03,$base02,$base01,$base00,$base0,$base1,$base2,$base3);
+    @include accentize($orange, $cyan, $yellow);
+}
+
+
+html * {
+    color-profile: sRGB;
+    rendering-intent: auto;
+}
+
+
+// ==================== miscellaneous styling ====================
+
+.inline-header {
+    display: inline-block;
+}
+
+figure {
+    padding: 5px;
+    font-size: 85%;
+    font-style: italic;
+    display: table;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    &.right {
+        width: 25%;
+        float: right;
+        margin-left: 10px;
+    }
+    &.left {
+        width: 25%;
+        float: left;
+        margin-right: 15px;
+    }
+}
+
+figure img {
+    display: block;
+    width: 100%;
+}
+
+figcaption {
+    text-align: center;
+    display: table-caption;
+    caption-side: bottom;
+}​
+
+why-does-this work {
+    /* Note to self: ask someone why red dots show up in the dev console and */
+    /* non of the clickable-entry rules work unless there is a string here. */
+}
+
+div.clickable-entry {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    position: relative;
+    h1, h2 , h3, h4, h5, h6, p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        text-decoration: none; /* No underlines on the link */
+        z-index: 10; /* Places the link above everything else in the div */
+        background-color: #FFF; /* Fix to make div clickable in IE */
+        opacity: 0; /* Fix to make div clickable in IE */
+        filter: alpha(opacity=1); /* Fix to make div clickable in IE */
+    }
+}
+
+.btn {
+    border-radius: 0px;
+}
+
+table {
+    width: 750px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    pre {
+        margin: 0px;
+    }
+}
+
+.navlinks {
+    font-size: 1.33em;
+}
+
+.navheader div {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.navfooter div {
+    margin-top: 30px;
+    margin-bottom: 0px;
+}

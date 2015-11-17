@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-xs-12">
+    {% if page.previous_in_category != nil %}
+      <div class="pull-left"><a target="_self" href="{{ page.previous_in_category.url }}">&lt;- {{ page.previous_in_category.title }}</a></div>
+    {% else %}
+      <div class="pull-left">No newer {{ page.categories }}.</div>
+    {% endif %}
+    {% if page.next_in_category != nil %}
+      <div class="pull-right"><a target="_self" href="{{ page.next_in_category.url }}">{{ page.next_in_category.title }} -&gt;</a></div>
+    {% else %}
+      <div class="pull-right">No older {{ page.categories }}.</div>
+    {% endif %}
+  </div>
+</div>

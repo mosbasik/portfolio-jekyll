@@ -2,7 +2,7 @@
 layout: post
 title:  moviepicker
 categories: projects
-excerpt: More information coming soon.  change 17
+excerpt: More information coming soon.  I think this works!
 ---
 
 Hosted at: [http://moviepicker.peterhenry.net/](http://moviepicker.peterhenry.net/ "Moviepicker: Answering the question 'What should we watch tonight?'")

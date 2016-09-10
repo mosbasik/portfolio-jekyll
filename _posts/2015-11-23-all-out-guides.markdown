@@ -14,6 +14,9 @@ Hosted at: [all-out.github.io/guides](http://all-out.github.io/guides/ "All-Out 
 
 Source code: [github.com/all-out/guides](https://github.com/all-out/guides "All-Out Guides Source")
 
+
+EDIT: I'm no longer updating this project and have migrated the information it contained to a wiki.  Refer to the [White Stag Wiki]({% post_url 2016-05-31-white-stag-wiki %}) project page for more info.
+
 - - -
 
 

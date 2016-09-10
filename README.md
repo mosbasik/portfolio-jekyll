@@ -14,22 +14,23 @@ yyyy-mm-dd-title-for-url.markdown
    ```
 ---
 layout: post
-title: title for display
+title:
 categories:
 disqus_identifier:
 excerpt:
 ---
 ```
+  1. `title` is the title for display, not URL.
 
-   `categories` is either `blogs` or `projects`
+  1. `categories` is either `blogs` or `projects`.
 
-   `disqus_identifier` is a new UUID (can be generated from the command line with `uuidgen`)
+  1. `disqus_identifier` is a new UUID (can be generated from the command line with `uuidgen`).  If this is removed, no Disqus comments section will be displayed.
 
-   `excerpt` is 2-3 lines from the post to serve as the preview text in list views
+  1. `excerpt` is 2-3 lines from the post to serve as the preview text for list views.
 
-1. Commit, push to Github, ssh into server
+1. Commit changes, push changes to Github, ssh into the server
 
-1. Run these commands on the server
+1. Run these commands on the server:
 
    ```
 cd /var/www/html/portfolio-jekyll
@@ -37,4 +38,4 @@ sudo git pull
 jekyll build
 ```
 
-Yeah, yeah, `sudo git pull` is a terrible idea.  To be fixed.  [Note to self](http://ryansechrest.com/2013/08/managing-file-and-folder-permissions-when-deploying-with-git/)
+   Yeah, yeah, `sudo git pull` is a terrible idea.  To be fixed.  [Note to self.](http://ryansechrest.com/2013/08/managing-file-and-folder-permissions-when-deploying-with-git/)

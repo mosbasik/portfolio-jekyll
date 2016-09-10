@@ -1,0 +1,29 @@
+---
+layout: post
+title: i am back
+categories: blogs
+disqus_identifier: dca32d74-5867-41e1-ad89-59fa3630cfe8
+excerpt:
+---
+
+Wow, it's been almost a year since I last updated this blog.
+
+In the interests of keeping my online presence up-to-date with the things I'm doing, I should try to update more often.  It's very tempting to only post when I have a completed (or at least functional) project to talk about, so the "blog" part of things suffers a bit. I'll see what I can do to keep it alive by discussing things that I'm looking into or that are on my mind.
+
+I _have_ been working on some new projects, which is what reminded me of this place.  I'll try to get some writeups posted of them posted soon.
+
+Another reason nothing has happened for a while is because the site was down for a couple of months - I accidentally let the domain name lapse!
+
+I _did_ have my account set to email me before any of my domains expired and I _did_ have [peterhenry.net](peterhenry.net) set to auto-renew - but the address I used was my "sign up for things and never check it" email, and I originally bought the domain using Paypal.
+
+Turns out that Namecheap isn't able to automatically charge Paypal; you have to fill your Namecheap balance in advance if you want to use Paypal.  If you hook up a bank account, though, it can charge you automatically - which is what I have set up now.
+
+When a Namecheap domain expires, it goes through [several stages](https://www.namecheap.com/support/knowledgebase/article.aspx/242/2207/what-is-domain-redemption-status):
+
+1. Grace Period (27 days) - you can reactivate the domain at any time for the regular renewal price.
+1. Auction Period (7 days) - the domain is placed on public auction.
+1. Redemption Period (41 days) - if the domain is not sold at auction, you (the original owner) are able to redeem it for $200 + the renewal prices.
+1. Pending Delete Period (6 days) - nothing can happen, and the domain status is changed to "PendingDelete" at the registry.
+1. Release - the domain is released back to the public for re-registration.
+
+Fortunately my domain hadn't already been sold at auction when I realized what was up during Period 3.  Given that there wasn't a huge need for my site to be up immediately, I decided to go ahead and wait for the domain to be released and snap it up then, rather than shell out to redeem it.  Given my current low profile, it worked out and no bots got it before me - but it was a good lesson and I'll be keeping closer tabs on my expiration dates in the future.

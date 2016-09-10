@@ -2,6 +2,7 @@
 layout: post
 title:  portfolio
 categories: projects
+disqus_identifier: f7438ffc-52c1-496f-b8f2-bf8e112695ec
 excerpt: This project is running my personal website.  As I got to the end of my time at Coding Campus, I realized I really needed a unified place to showcase the different things I've been working on.
 ---
 

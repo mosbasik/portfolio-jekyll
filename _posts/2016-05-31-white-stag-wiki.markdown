@@ -2,7 +2,6 @@
 layout: post
 title: white stag wiki
 categories: projects
-comments: true
 disqus_identifier: cc21e3f4-ae65-48d4-8fce-e1dfbd96a1d6
 excerpt: >
     This wiki is the continuation of my All-Out Guides project, designed to
@@ -11,6 +10,8 @@ excerpt: >
 
 
 Hosted at: [wiki.whitestagexitbag.org](http://wiki.whitestagexitbag.org "White Stag Wiki")
+
+Content hosted on this wiki reflects the views of the authors only and does not necessarily represent my [Peter Henry]'s views.
 
 - - -
 
@@ -112,29 +113,3 @@ Incidentally, the [Brave Newbies Wiki](https://wiki.braveineve.com/) (belonging 
 ##### [Github Wiki](https://help.github.com/articles/about-github-wikis/)
 
 Github offers a wiki solution to allow developers to publish more in-depth documentation than a readme file permits.  These wikis are simply git repositories, though, which come with some pros and cons.  All changes to Github Wikis are recorded in version control, and the same git workflow of clone/commit/push/pullrequest/merge etc applies - but this requires all contributors to have github accounts and  understand how to use git, etc.  This makes the barrier to editing quite high for the non-technical.  This was one thing I was trying to get away from by moving away from my Github Pages based [All-Out Guides]({% post_url 2015-11-23-all-out-guides %}).
-
-- - -
-{% if page.comments %}
-<div id="disqus_thread"></div>
-<script>
-    /**
-     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-     */
-    
-    var disqus_config = function () {
-        this.page.identifier = '{{ page.disqus_identifier }}' // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        this.page.url = "{{ site.url }}{{ page.url }}";  // Replace PAGE_URL with your page's canonical URL variable
-    };
-    
-    (function() {  // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        
-        s.src = '//peterhenry.disqus.com/embed.js';
-        
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-{% endif %}

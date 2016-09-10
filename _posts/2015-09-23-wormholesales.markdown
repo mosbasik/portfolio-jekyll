@@ -2,6 +2,7 @@
 layout: post
 title:  wormholesales
 categories: projects
+disqus_identifier: 6a114ca8-f387-4f23-aea6-bd53f5b18272
 excerpt: In my leisure time, I run a small corporation in the MMO Eve Online created by CCP games.  This project is an under-construction tool to facilitate the buying and selling of "wormhole systems" by Eve players.
 ---
 

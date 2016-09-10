@@ -2,6 +2,7 @@
 layout: post
 title: markdown in django
 categories: blogs
+disqus_identifier: 113e9942-0121-4f9e-8319-3e7ec27ee137
 excerpt: I spent most of today refactoring the models for my personal site in order to use Markdown to format a lot of my static content.
 ---
 

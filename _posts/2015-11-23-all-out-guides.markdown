@@ -2,6 +2,7 @@
 layout: post
 title: all-out guides
 categories: projects
+disqus_identifier: dbb08230-2605-41ed-ab08-7890cb8820ff
 excerpt: >
     For the time being, this is where reference material for setting up new
     members of All-Out is going to be hosted.  As content is written that

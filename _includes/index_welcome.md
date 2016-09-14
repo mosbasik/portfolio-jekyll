@@ -2,7 +2,7 @@ Welcome
 =======
 
 <figure class="right">
-    <a href="/img/portrait.png">
+    <a href="/img/portrait.jpg">
         <img alt="Peter Henry Portrait" title="I have probably not cut my hair since this picture was taken." src="/img/portrait.png" width="33%">
     </a>
     <figcaption>

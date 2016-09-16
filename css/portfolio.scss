@@ -21,6 +21,9 @@ $cyan:      #2aa198;
 $green:     #859900;
 
 // ==================== font installation ====================
+
+@import '/fonts/FiraCode_1.201/fira_code'
+
 @font-face {
   font-family: 'menlo';
   src: url('/fonts/menlo-regular.ttf');
@@ -89,7 +92,11 @@ html, body {
     background-color:$rebase03;
     color:$rebase0;
     body {
-        font-family: menlo, monospace;
+        -webkit-font-feature-settings: "liga" on, "calt" on;
+        -webkit-font-smoothing: antialiased;
+        font-variant-ligatures: contextual;
+        text-rendering: optimizeLegibility;
+        font-family: 'Fira Code Regular', monospace;
         color:$rebase0;
         p {
             margin-top: 0;

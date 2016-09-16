@@ -16,5 +16,7 @@ github_username:  mos_basik
 
 # Build settings
 markdown: kramdown
+sass:
+  sass_dir: _sass
 
 exclude: [vendor]

@@ -1,0 +1,12 @@
+---
+---
+
+// ==================== import bootstrap and edit it ====================
+
+$grid-gutter-width:             30px !default;
+$container-desktop:            (850px + $grid-gutter-width);
+$container-large-desktop:      (850px + $grid-gutter-width);
+
+$font-size-base: 15px;
+
+@import 'bootstrap';

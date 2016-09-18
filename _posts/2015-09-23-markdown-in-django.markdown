@@ -12,15 +12,13 @@ While I was experimenting with the layout of the Welcome and About pages, I star
 
 Writing identical HTML for two format-rich `div`s and _keeping_ them identical over time sounded like a terrible idea; I needed to be able to drop in a template tag in two places and have the HTML take care of itself.  And in order to do that, I needed to get my static content in my database somehow.
 
-I had designed my database around `Blog` and `Project` models, which are nearly identical subclasses of my `Entry` model.  (If I were writing my own admin interface, I would probably have just put a choice field on `Entry` with blog/project options to distinguish them - but I'm using the Django Admin console, so subclassing the different kinds of posts allows me to easily split the two groups of entries into their own pages of the console without having to dig into customizing Django Admin.)
+I had designed my database around `Blog` and `Project` models, which are nearly identical subclasses of my `Entry` model (if I were writing my own admin interface, I would probably have just put a choice field on `Entry` with blog/project options to distinguish them - but I'm using the Django Admin console, so subclassing the different kinds of posts allows me to easily split the two groups of entries into their own pages of the console without having to dig into customizing Django Admin).
 
 But this design meant that in order to store formatted Markdown, it needed to be associated with either a `Blog` or a `Project` object, and I wanted to be able to write Markdown associated with neither.
 
 So, I wrote two new classes:
 
-{% highlight python linenos %}
-#!/usr/bin/python
-
+``` python
 # This is my new base class; it provides created/modified timestamp fields and
 # a Markdown body field (managed by Django- MarkupField).
 class MarkupBlock(models.Model):
@@ -32,13 +30,11 @@ class MarkupBlock(models.Model):
 # name to a given block of Markdown text.
 class TextBlock(MarkupBlock):
     name = models.CharField(max_length=255, unique=True)
-{% endhighlight %}
+```
 
 I also set `Entry` to be a subclass of `MarkupBlock` and removed all the now-redundant fields, leaving this:
 
-{% highlight python linenos %}
-#!/usr/bin/python
-
+``` python
 # This class provides a non-unique title field, a unique slug, a display date,
 # and a toggle for whether or not the entry is publically displayed.
 class Entry(MarkupBlock):
@@ -46,15 +42,13 @@ class Entry(MarkupBlock):
     slug = AutoSlugField(populate_from='title')
     display_date = models.DateTimeField()
     display = models.BooleanField(default=False)
-{% endhighlight %}
+```
 
 The `Blog` and `Project` subclasses remain unchanged.
 
 With the new model structure, I can now write Markdown source in Django Admin and store it in a TextBlock object with a unique name.  In a view, I load the object into a context variable using a query on that name, and then it's available to use in my templates:
 
-{% highlight html linenos %}
-#!html
-
+``` html
 <h1>About Me</h1>
 <div class="row">
     <div class="col-md-6 col-md-push-6">
@@ -64,15 +58,13 @@ With the new model structure, I can now write Markdown source in Django Admin an
         {{ overview.body }}                 <!-- textblock "overview" -->
     </div>
 </div>
-{% endhighlight %}
+```
 
 Of course, by making static parts of my website live in my database, it means that on a fresh deployment of the website, I'm missing large chunks of it until I explicitly create those objects.
 
 The best way to fix that is to make a loading script, and that's on my to-do list.  But in the meantime, given that fresh deployments aren't (shouldn't!) be common, I just wrote a static `get` method on the `TextBlock` model that handles all requests for `TextBlock`s and fails nicely if a requested object does not exist:
 
-{% highlight python linenos %}
-#!/usr/bin/python
-
+``` python
 @staticmethod
 def get(name, heading=None):
     block_heading = '' if heading is None else heading
@@ -84,4 +76,4 @@ def get(name, heading=None):
             body='%s\n\nSection is under development.' % block_heading
         )
         return textblock
-{% endhighlight %}
+```

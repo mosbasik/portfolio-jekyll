@@ -31,3 +31,13 @@ I'm using the Apple-developed monospace font "Menlo" right now, and serving it f
 The whole reason I used Solarized as a color scheme in the first place was because it had recognizable light and dark versions.  I had a switch to allow a user to swap between light and dark themes at will, which is currently broken because I moved from Django to Jekyll and now instead of rendering a template on page load, my templates are rendered when I update the site.
 
 I can probably fix this with some Javascript.  When I first wrote this site I probably would have used JQuery - but now I'm tempted to use Vue.js.  I hate to load _another_ library, given that my Bootstrap is currently using JQuery - but some reading indicates that maybe that's not a hard dependency.  Sure would be nice to take JQuery out entirely.
+
+- - -
+
+## Edit (Sep 19)
+
+Went with `bootstrap-sass`.  I lose the speed benefit of using a CDN, but I can cut down the number of Bootstrap features I import to cut the load size.
+
+I'm really liking Fira Code so far.  Scattered serifs, circles instead of squares for the dots, and a shorter line length have significantly improved legibility.  A quick look through its info says it unfortunately doesn't work with `rxvt` or Sublime Text, my main text editors.  I'll have to look into that later, because that might be old information - it doesn't make sense for something like Sublime to not support ligatures, and I use `rxvt-unicode`, not the original `rxvt`, specifically so that I can use unicode characters.
+
+For the style switching, I've done some testing with Vue and it looks like it will be _waaay_ too heavy for what I need.  Because my custom stylesheet doesn't load until after Vue loads, there's this really bad looking split second of default bootstrap before my themes are applied (which is even more noticeable because my dark theme is the default).  Probably going to go vanilla JS for this one; more work is needed.

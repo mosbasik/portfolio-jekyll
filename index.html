@@ -18,7 +18,7 @@ layout: base
         <div class="col-xs-12">
           <a target="_self" href="{{ blog.url }}"></a>
           <h5>{{ blog.date | date_to_string }}</h5>
-          <h2>{{ blog.title }}</h2>
+          <h3>{{ blog.title }}</h3>
           <span>{{ blog.body|striptags|truncatewords:50 }}</span>
           <span>{{ blog.excerpt }}</span>
         </div>
@@ -46,7 +46,7 @@ layout: base
         <div class="col-xs-12">
           <a target="_self" href="{{ project.url }}"></a>
           <h5>{{ project.date | date_to_string }}</h5>
-          <h2>{{ project.title }}</h2>
+          <h3>{{ project.title }}</h3>
           <span>{{ project.body|striptags|truncatewords:50 }}</span>
           <span>{{ project.excerpt }}</span>
         </div>

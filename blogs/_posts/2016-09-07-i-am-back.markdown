@@ -1,7 +1,6 @@
 ---
 layout: post
 title: i am back
-categories: blogs
 disqus_identifier: dca32d74-5867-41e1-ad89-59fa3630cfe8
 excerpt:
 ---

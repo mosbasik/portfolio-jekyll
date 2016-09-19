@@ -1,7 +1,6 @@
 ---
 layout: post
 title: white stag wiki
-categories: projects
 disqus_identifier: cc21e3f4-ae65-48d4-8fce-e1dfbd96a1d6
 excerpt: >
     This wiki is the continuation of my All-Out Guides project, designed to

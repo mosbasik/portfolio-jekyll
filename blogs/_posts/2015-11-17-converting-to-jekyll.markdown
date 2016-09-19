@@ -1,7 +1,6 @@
 ---
 layout: post
 title: converting to jekyll
-categories: blogs
 disqus_identifier: 8e83e47a-ddc1-4639-ac2f-6e9cb8b6773a
 excerpt: I've been wanting to try out Jekyll as a simple publishing platform for a while.  I've known about it, but never got around to using it for anything.  When I decided to re-image my server, it seemed like a good time to rethink the structure of this blog.
 ---

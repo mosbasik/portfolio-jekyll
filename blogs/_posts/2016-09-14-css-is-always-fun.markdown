@@ -1,7 +1,6 @@
 ---
 layout: post
 title: css is always fun
-categories: blogs
 disqus_identifier: b35edeb5-0b4d-442b-baab-180ba0033962
 excerpt:
 ---

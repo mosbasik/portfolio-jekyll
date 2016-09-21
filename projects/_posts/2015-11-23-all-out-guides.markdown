@@ -2,6 +2,7 @@
 layout: post
 title: all-out guides
 disqus_identifier: dbb08230-2605-41ed-ab08-7890cb8820ff
+tags: eve-online github github-pages jekyll markdown kramdown bootstrap bootflat
 excerpt: >
     For the time being, this is where reference material for setting up new
     members of All-Out is going to be hosted.  As content is written that

@@ -1,0 +1,50 @@
+---
+layout: base
+custom_js: https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.min.js
+---
+
+{% assign sorted_tags = (site.tags | sort:0) %}
+
+<h1>Tags</h1>
+
+<!-- sorting buttons -->
+<div class="row">
+  <div class="col-sm-12">
+    <div class="button-group tag-grid-sort-by-button-group">
+      Choose sort order: 
+      <button class="btn btn-default" data-sort-by="name">Alphabetical</button>
+      <button class="btn btn-default" data-sort-by="count">Post Count</button>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- tag wall -->
+<div class="row">
+  <div class="col-sm-12 tag-grid">
+    {% for tag in sorted_tags %}
+      {% capture this_word %}{{ tag | first }}{% endcapture %}
+      <div class="tag-grid-item">
+        <a href='#{{ this_word }}' target="_self"><span class="tag-grid-item-name">{{ this_word }}</span><span class="tag-grid-item-count"><sup>{{ site.tags[this_word].size }}</sup></span></a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<hr>
+
+<!-- tag details and post links -->
+{% for tag in sorted_tags %}
+  {% capture this_word %}{{ tag | first }}{% endcapture %}
+  <h2 id="{{ this_word }}">{{ this_word }}</h2>
+  <ul>
+    {% for post in site.tags[this_word] %}
+      <li itemscope>
+        <span class="entry-date">
+          <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date_to_string }}</time>
+        </span> <a href="{{ post.url }}" target="_self">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endfor %}

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  moviepicker
+tags: python django isotope omnidb imdb
 disqus_identifier: 15a8e990-6774-46d1-bc43-614358b15776
 excerpt: More information coming soon.
 ---

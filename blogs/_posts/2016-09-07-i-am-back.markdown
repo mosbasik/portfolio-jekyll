@@ -2,7 +2,8 @@
 layout: post
 title: i am back
 disqus_identifier: dca32d74-5867-41e1-ad89-59fa3630cfe8
-excerpt:
+tags: namecheap
+excerpt: Wow, it's been almost a year since I last updated this blog. In the interests of keeping my online presence up-to-date with the things I'm doing, I should try to update more often.  It's very tempting to only post when I have a completed (or at least functional) project to talk about.
 ---
 
 Wow, it's been almost a year since I last updated this blog.

@@ -121,7 +121,7 @@ html, body {
     }
     .btn-default {
         color:$rebase0;
-        background-color: $rebase03;
+        background-color: $rebase02;
         border: none;
         &:focus {
             outline: none;
@@ -484,4 +484,11 @@ table {
 .navfooter div {
     margin-top: 30px;
     margin-bottom: 0px;
+}
+
+.tag-grid {
+    margin: -5px;
+}
+.tag-grid-item {
+    margin: 5px;
 }

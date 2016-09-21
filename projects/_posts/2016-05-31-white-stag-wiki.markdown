@@ -2,6 +2,7 @@
 layout: post
 title: white stag wiki
 disqus_identifier: cc21e3f4-ae65-48d4-8fce-e1dfbd96a1d6
+tags: eve-online wiki dokuwiki
 excerpt: >
     This wiki is the continuation of my All-Out Guides project, designed to
     host information, guides and history for members of White Stag Exit Bag.

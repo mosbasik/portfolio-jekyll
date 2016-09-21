@@ -2,6 +2,7 @@
 layout: post
 title: skillfarming
 disqus_identifier: 7f082488-dd32-457c-831e-acf4ce0f84ad
+tags: eve-online vue-js eve-central bootstrap bootflat single-page-app local-storage
 excerpt: >
     Subscribed Eve Online characters continuously and passively accumulate SP (skill points).  The owner of a character is able to extract SP from the character and sell it on the ingame marketplace for ISK (the ingame currency).
 ---

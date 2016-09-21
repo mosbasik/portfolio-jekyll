@@ -2,7 +2,8 @@
 layout: post
 title: css is always fun
 disqus_identifier: b35edeb5-0b4d-442b-baab-180ba0033962
-excerpt:
+tags: css bootstrap sass font fira-code theme solarized
+excerpt: This place needs a styling overhaul.  The default bootstrap fixed container is too wide in fullscreen for comfortable reading and it always has been. I need to decide on the best way to narrow it.
 ---
 
 This place needs a styling overhaul.

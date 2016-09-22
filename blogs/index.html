@@ -10,7 +10,7 @@ layout: base
 {% for blog in site.categories.blogs %}
   <div class="row clickable-entry">
     <div class="col-xs-12">
-      <a target="_self" href="{{ blog.url }}"></a>
+      <a target="_self" href="{{ blog.url }}" class="block-link"></a>
       <span class="post-date">{{ blog.date | date_to_string }}</span>
       <h2>{{ blog.title }}</h2>
       <span>{{ blog.excerpt }}</span>

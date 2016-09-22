@@ -3,14 +3,11 @@ layout: post
 title:  portfolio
 disqus_identifier: f7438ffc-52c1-496f-b8f2-bf8e112695ec
 tags: python django sqlite bootstrap sass solarized markdown django-markupfield python-markdown codehilight pygments
+hostlink: http://peterhenry.net
+sourcelink: https://github.com/mosbasik/portfolio
+notes: "EDIT: I've switched my blog engine from Django to Jekyll and [the new repository is here](https://github.com/mosbasik/portfolio-jekyll)."
 excerpt: This project is running my personal website.  As I got to the end of my time at Coding Campus, I realized I really needed a unified place to showcase the different things I've been working on.
 ---
-
-Hosted at: [http://peterhenry.net/](http://peterhenry.net/ "Peter Henry's Blog")
-
-Source code: [https://github.com/mosbasik/portfolio](https://github.com/mosbasik/portfolio "A portfolio of my notable work")
-
-- - -
 
 Purpose
 -------

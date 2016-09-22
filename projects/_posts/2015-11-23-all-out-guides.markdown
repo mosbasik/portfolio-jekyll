@@ -3,6 +3,9 @@ layout: post
 title: all-out guides
 disqus_identifier: dbb08230-2605-41ed-ab08-7890cb8820ff
 tags: eve-online github github-pages jekyll markdown kramdown bootstrap bootflat
+hostlink: http://all-out.github.io/guides/
+sourcelink: https://github.com/all-out/guides
+notes: "EDIT: I'm no longer updating this project and have migrated the information it contained to a wiki.  Refer to the [White Stag Wiki]({% post_url 2016-05-31-white-stag-wiki %}) project page for more info."
 excerpt: >
     For the time being, this is where reference material for setting up new
     members of All-Out is going to be hosted.  As content is written that
@@ -11,14 +14,6 @@ excerpt: >
 ---
 
 
-Hosted at: [all-out.github.io/guides](http://all-out.github.io/guides/ "All-Out Guides")
-
-Source code: [github.com/all-out/guides](https://github.com/all-out/guides "All-Out Guides Source")
-
-
-EDIT: I'm no longer updating this project and have migrated the information it contained to a wiki.  Refer to the [White Stag Wiki]({% post_url 2016-05-31-white-stag-wiki %}) project page for more info.
-
-- - -
 
 
 ## Purpose

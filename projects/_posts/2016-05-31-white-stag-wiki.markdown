@@ -3,18 +3,12 @@ layout: post
 title: white stag wiki
 disqus_identifier: cc21e3f4-ae65-48d4-8fce-e1dfbd96a1d6
 tags: eve-online wiki dokuwiki
+hostlink: http://wiki.whitestagexitbag.org
+notes: Content hosted on this wiki reflects the views of its authors only and does not necessarily represent my [Peter Henry]'s views.
 excerpt: >
     This wiki is the continuation of my All-Out Guides project, designed to
     host information, guides and history for members of White Stag Exit Bag.
 ---
-
-
-Hosted at: [wiki.whitestagexitbag.org](http://wiki.whitestagexitbag.org "White Stag Wiki")
-
-Content hosted on this wiki reflects the views of the authors only and does not necessarily represent my [Peter Henry]'s views.
-
-- - -
-
 
 ## Purpose
 

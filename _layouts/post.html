@@ -19,7 +19,25 @@ layout: base
             {% endfor %}
           </p>
         {% endif %}
+        {% if page.sourcelink or page.hostlink %}
+          <p>
+            Hosting link(s):
+            {% if page.sourcelink %}
+              <a href="{{ page.sourcelink }}" target="_blank">source code</a>
+              {% if page.hostlink %}|{% endif %}
+            {% endif %}
+            {% if page.hostlink %}
+              <a href="{{ page.hostlink }}" target="_blank">working example</a>
+            {% endif %}
+          </p>
+        {% endif %}
+        {% if page.notes %}
+          {{ page.notes | markdownify }}
+        {% endif %}
+        </p>
       </header>
+
+      <hr>
 
 
       <div class="post-content" itemprop="articleBody">

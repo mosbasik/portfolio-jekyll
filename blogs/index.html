@@ -11,7 +11,7 @@ layout: base
   <div class="row clickable-entry">
     <div class="col-xs-12">
       <a target="_self" href="{{ blog.url }}"></a>
-      <h5>{{ blog.date | date_to_string }}</h5>
+      <span class="post-date">{{ blog.date | date_to_string }}</span>
       <h2>{{ blog.title }}</h2>
       <span>{{ blog.excerpt }}</span>
     </div>

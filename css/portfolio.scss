@@ -108,7 +108,7 @@ html, body {
         }
     }
 
-    h1,h2,h3,h4,h5,h6 {
+    h1,h2,h3,h4,h5,h6, .post-date {
         color:$rebase1;
         border-color: $rebase0;
     }
@@ -327,16 +327,16 @@ html, body {
             color:$accent3;
         }
     }
-    h1,h2,h3,h4,h5,h6 {
-        color:$accent1;
+    h1,h2,h3,h4,h5,h6, .post-date {
+        color: $accent1;
     }
 
     .clickable-entry {
-        h1,h2,h3,h4,h5,h6 {
+        h1,h2,h3,h4,h5,h6, .post-date {
             color: $accent3;
         }
         &:hover {
-            h1,h2,h3,h4,h5,h6 {
+            h1,h2,h3,h4,h5,h6, .post-date {
                 color: $accent2;
             }
         }
@@ -491,6 +491,17 @@ table {
 }
 .tag-grid-item {
     margin: 5px;
+}
+
+.post-header {
+    margin-top: 25px;
+}
+.post-date {
+    font-size: 15px;
+}
+.post-title {
+    margin-top: 0;
+}
 
 #disqus_thread {
     margin-top: 30px;

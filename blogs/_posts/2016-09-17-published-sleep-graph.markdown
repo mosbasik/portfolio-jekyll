@@ -2,7 +2,7 @@
 layout: post
 title: published sleep graph
 disqus_identifier: 938421b7-707c-4486-8beb-43b47167be46
-tags: ideas
+tags: ideas sleep csv android
 excerpt: I've been logging my sleep patterns since about 2012.
 ---
 

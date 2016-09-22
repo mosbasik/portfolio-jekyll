@@ -2,7 +2,7 @@
 layout: post
 title: skillfarming
 disqus_identifier: 7f082488-dd32-457c-831e-acf4ce0f84ad
-tags: eve-online vue-js eve-central bootstrap bootflat single-page-app local-storage
+tags: eve-online vue-js eve-central bootstrap bootflat single-page-app local-storage isk
 sourcelink: https://github.com/mosbasik/skillfarming
 hostlink: https://mosbasik.github.io/skillfarming
 excerpt: >

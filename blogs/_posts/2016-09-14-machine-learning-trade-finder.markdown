@@ -2,7 +2,7 @@
 layout: post
 title: machine learning trade finder
 disqus_identifier: 93c2c13f-0b12-45ce-95bf-b903780872db
-tags: ideas
+tags: ideas machine-learning eve-online isk scikitlearn python
 excerpt: The hard part of trading in Eve Online is deciding what items to trade on.
 ---
 

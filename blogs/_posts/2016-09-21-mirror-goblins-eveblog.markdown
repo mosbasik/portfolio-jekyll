@@ -2,7 +2,7 @@
 layout: post
 title: mirror goblin's eveblog
 disqus_identifier: 2e5f8a0c-1c52-4619-978a-3ad83f2f9af9
-tags: ideas eve-online gevlon-goblin jekyll github github-pages
+tags: ideas eve-online gevlon-goblin jekyll github github-pages blog
 excerpt: Gevlon Goblin is one of the most polarizing figures in Eve Online's blogging community.  
 ---
 

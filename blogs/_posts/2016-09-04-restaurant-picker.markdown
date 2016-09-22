@@ -2,7 +2,7 @@
 layout: post
 title: restaurant picker
 disqus_identifier: 81db6a8f-3637-47b6-97b0-a682e2c39c2e
-tags: ideas
+tags: ideas food
 excerpt: Family gets together and goes out to eat every Sunday. We have to pick a restaurant somehow.
 ---
 

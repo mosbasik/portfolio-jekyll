@@ -165,7 +165,7 @@ Of course, I could just have just sent an alliance mail with that function and s
 
 #### Prices
 
-Everyone is already using it to calculate the proper collateral for their contracts anyway, so it's not a huge step for them to simply submit the link to their Evepraisal link instead of their price.  This lets me do a couple of nice things:
+Everyone is already using it to calculate the proper collateral for their contracts anyway, so it's not a huge step for them to simply submit their Evepraisal link instead of their price.  This lets me do a couple of nice things:
 
 - I can require the Evepraisal to be taken for a specific station (Jita, in my case) and reject it if it's from anywhere else.  This forces people to have the correct collateral.
 

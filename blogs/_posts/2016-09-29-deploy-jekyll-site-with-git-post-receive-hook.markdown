@@ -127,7 +127,7 @@ server$ sudo chown -R deployer:deployer /var/www/html/acme      # give the deplo
 
 ### Make the Apache vhost file
 
-Of course, there are any number of ways to set this up and it's a bit out of the scope of this blog to describe how to get a web server configured - but this is an example vhost that I used with this deployment method.  Make sure that the main Apache configuration file knows where to find this vhost file so it can load it.
+Of course, there are any number of ways to set this up and it's a bit out of the scope of this post to describe how to get a web server configured - but this is an example vhost that I used with this deployment method.  Make sure that the main Apache configuration file knows where to find this vhost file so it can load it.
 
 
 ```conf

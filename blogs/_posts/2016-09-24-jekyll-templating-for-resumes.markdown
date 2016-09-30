@@ -2,7 +2,7 @@
 layout: post
 title: jekyll templating for resumes
 disqus_identifier: a18249c2-4ca3-4adc-aeaf-de9da659a22f
-tags: resume jekyll
+tags: resume jekyll github css responsive template yaml latex
 excerpt: >
   Templating is the main thing I want for a resume-building solution.I want to
   be able to fill out what amounts to a pre-designed form for each category on
@@ -32,10 +32,3 @@ I'm sure there are many others, but these were enough to give me some ideas.  Be
 I think I'll start messing around and try to duplicate my current resume using Jekyll and see what kinds of results I'm able to get.
 
 Even if the results are good, there are still some things I'd need to think about before I'd switch from my current resume.  I _really_ like LaTeX's text formatting!  It's a pleasure to read LaTeX documents.  Also, my resume has included a GitHub shortlink to its hosted version in my repository for a long time.  I don't really want to break that link - but before I used LaTeX/GitHub, I was using Google Docs, I had a Google shortlink, and I broke that shortlink when I upgraded.  The best solution is probably just to put it at `peterhenry.net/resume`, since I have full control of that path and I can make it forward to any other link as needed in the future.  I'll cross that bridge when I come to it, though.
-
-
-{% comment %}
-
-What if I wrote my resume using html?  As a webpage it would be convenient and a source of truth as the most up-to-date version.  HTML/CSS would give me perfect style control, and templating provides a simple way to add more material without worrying about matching existing styling.  I could probably use something like [wkhtmltopdf](http://wkhtmltopdf.org/) to export a document when I need to print/email it.  [My current resume](https://github.com/mosbasik/resume) is done with [LaTeX](https://www.latex-project.org/), which is basically a markup language for text already - but LaTeX isn't as widespread a skill as web design, so it's kind of nice to have that displayed somewhere. Hm.
-
-{% endcomment %}
